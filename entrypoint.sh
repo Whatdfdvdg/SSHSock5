@@ -6,9 +6,7 @@ EOF
 
 /usr/sbin/sshd-keygen
 /usr/sbin/sshd -E /root/sshd_log  -f /root/sshd_config -p 22
-SSHPROXYADDR=172.17.0.1
-SSHPROXYPORT=22
-SSHPROXYPASS=dd13427
+
 func_cmd_need_password(){
    local password=$1
    shift 1
